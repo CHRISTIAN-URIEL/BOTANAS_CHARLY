@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse - BOTANAS CHARLY</title>
+    <link rel="shortcut icon" href="IMGCHARLY/LOGO.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .register-container {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .register-container img {
+            width: 100px;
+            margin-bottom: 1rem;
+        }
+        .register-container form {
+            display: flex;
+            flex-direction: column;
+        }
+        .register-container input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .register-container button {
+            padding: 0.5rem;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .register-container button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="register-container">
+        <img src="IMGCHARLY/LOGO.png" alt="Logo Charly">
+        <h2>Registrarse</h2>
+        <form action="register_handler.php" method="POST">
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <input type="email" name="correo" placeholder="Correo electrónico" required>
+            <input type="password" name="contrasena" placeholder="Contraseña" required>
+            <input type="text" name="domicilio" placeholder="Domicilio" required>
+            <input type="text" name="telefono" placeholder="Teléfono" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        
+    </div>
+</body>
+</html>
