@@ -1,0 +1,5 @@
+Hola ☺
+Este es un archivo para verificar la sincronización del repositorio local con el remoto
+no afectara al proyecto en general
+
+Christian Uriel 22/06/2024
